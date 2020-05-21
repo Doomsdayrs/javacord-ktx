@@ -1,10 +1,11 @@
 plugins {
     java
+    maven
     kotlin("jvm") version "1.3.72"
 }
 
 group = "com.github.doomsdayrs.lib"
-version = "0.1.0"
+version = "0.1.1"
 
 repositories {
     mavenCentral()
