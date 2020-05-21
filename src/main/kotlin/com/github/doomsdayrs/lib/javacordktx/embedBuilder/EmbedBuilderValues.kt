@@ -56,7 +56,7 @@ var EmbedBuilder.description: String
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setImage]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
 var EmbedBuilder.url: String
@@ -66,7 +66,7 @@ var EmbedBuilder.url: String
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setImage]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
 var EmbedBuilder.timeStamp: Instant
@@ -139,16 +139,6 @@ var EmbedBuilder.footerWithIconInput: Pair<String, InputStream>
  * DSL way to use [EmbedBuilder.setFooter]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.footerWithIconInputType: Pair<String, Pair<InputStream, String>>
-	get() = throw Exception("Stud")
-	set(value) {
-		setFooter(value.first, value.second.first, value.second.second)
-	}
-
-/**
- * DSL way to use [EmbedBuilder.setFooter]
- * Throws exception on attempts to access value
- */
 var EmbedBuilder.footerWithIconBytes: Pair<String, ByteArray>
 	get() = throw Exception("Stud")
 	set(value) {
@@ -159,30 +149,10 @@ var EmbedBuilder.footerWithIconBytes: Pair<String, ByteArray>
  * DSL way to use [EmbedBuilder.setFooter]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.footerWithIconBytesType: Pair<String, Pair<ByteArray, String>>
-	get() = throw Exception("Stud")
-	set(value) {
-		setFooter(value.first, value.second.first, value.second.second)
-	}
-
-/**
- * DSL way to use [EmbedBuilder.setFooter]
- * Throws exception on attempts to access value
- */
 var EmbedBuilder.footerWithIconBuffered: Pair<String, BufferedImage>
 	get() = throw Exception("Stud")
 	set(value) {
 		setFooter(value.first, value.second)
-	}
-
-/**
- * DSL way to use [EmbedBuilder.setFooter]
- * Throws exception on attempts to access value
- */
-var EmbedBuilder.footerWithIconBufferedType: Pair<String, Pair<BufferedImage, String>>
-	get() = throw Exception("Stud")
-	set(value) {
-		setFooter(value.first, value.second.first, value.second.second)
 	}
 
 
@@ -310,91 +280,91 @@ var EmbedBuilder.author: String
 
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageURL: Pair<String, Pair<String, String>>
+var EmbedBuilder.thumbnailURL: String
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndIcon: Pair<String, Pair<String, Icon>>
+var EmbedBuilder.thumbnailIcon: Icon
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageFile: Pair<String, Pair<String, File>>
+var EmbedBuilder.thumbnailFile: File
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageInput: Pair<String, Pair<String, InputStream>>
+var EmbedBuilder.thumbnailInput: InputStream
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageInputType: Pair<String, Pair<String, Pair<InputStream, String>>>
+var EmbedBuilder.thumbnailInputTyped: Pair<InputStream, String>
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second.first, value.second.second.second)
+		setThumbnail(value.first, value.second)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageBytes: Pair<String, Pair<String, ByteArray>>
+var EmbedBuilder.thumbnailBytes: ByteArray
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageBytesType: Pair<String, Pair<String, Pair<ByteArray, String>>>
+var EmbedBuilder.thumbnailBytesType: Pair<ByteArray, String>
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second.first, value.second.second.second)
+		setThumbnail(value.first, value.second)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageBuffered: Pair<String, Pair<String, BufferedImage>>
+var EmbedBuilder.thumbnailBuffered: BufferedImage
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second)
+		setThumbnail(value)
 	}
 
 /**
- * DSL way to use [EmbedBuilder.setAuthor]
+ * DSL way to use [EmbedBuilder.setThumbnail]
  * Throws exception on attempts to access value
  */
-var EmbedBuilder.authorWithURLAndImageBufferedType: Pair<String, Pair<String, Pair<BufferedImage, String>>>
+var EmbedBuilder.thumbnailBufferedType: Pair<BufferedImage, String>
 	get() = throw Exception("Stud")
 	set(value) {
-		setAuthor(value.first, value.second.first, value.second.second.first, value.second.second.second)
+		setThumbnail(value.first, value.second)
 	}
