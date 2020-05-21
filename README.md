@@ -4,8 +4,8 @@ Compilation of kotlin extensions for javacord
 # Use Cases
 
 ## EmbedBuilder DSL
+There are lots of variables you can use, but that takes time so just check this out. The DSL does __not__ cover any functions that require more then 2 parameters currently. So you can just call the functions inside the block 
 
-There are lots of variables you can use, but that takes time so just check this out
 ```kotlin
 embedBuilder {
 		title = "Blah"
