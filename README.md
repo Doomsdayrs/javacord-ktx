@@ -1,4 +1,5 @@
-# javacord-ktx
+# javacord-ktx [![Release](https://jitpack.io/v/doomsdayrs/javacord-ktx.svg)](https://jitpack.io/#doomsdayrs/javacord-ktx)
+
 Compilation of kotlin extensions for javacord
 
 # Use Cases
