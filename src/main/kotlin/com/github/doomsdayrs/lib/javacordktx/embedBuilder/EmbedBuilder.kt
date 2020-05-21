@@ -29,15 +29,15 @@ import org.javacord.api.entity.message.embed.EmbedBuilder
  * DSL on the current embed
  */
 @DslMarker
-annotation class EmbedBuilderDSL
+private annotation class EmbedDSL
 
-@EmbedBuilderDSL
+@EmbedDSL
 inline fun EmbedBuilder.builder(action: EmbedBuilder.() -> Unit): EmbedBuilder = this.also(action)
 
 /**
  * DSL on a cloned embed
  */
-@EmbedBuilderDSL
+@EmbedDSL
 inline fun EmbedBuilder.copyBuilder(action: EmbedBuilder.() -> Unit): EmbedBuilder =
 		let { val i = it;i.action();i }
 
@@ -45,7 +45,7 @@ inline fun EmbedBuilder.copyBuilder(action: EmbedBuilder.() -> Unit): EmbedBuild
  * @param inline Whether the field should be inline or not.
  * @param value [Pair] of ([String] name) TO ([String] value)
  */
-@EmbedBuilderDSL
+@EmbedDSL
 inline fun EmbedBuilder.field(
 		inline: Boolean = false,
 		value: EmbedBuilder.() -> Pair<@ParameterName("name") String, @ParameterName("value") String>
@@ -56,5 +56,5 @@ inline fun EmbedBuilder.field(
 /**
  * DSL to build an embed
  */
-@EmbedBuilderDSL
+@EmbedDSL
 inline fun embedBuilder(action: EmbedBuilder.() -> Unit): EmbedBuilder = EmbedBuilder().also(action)
