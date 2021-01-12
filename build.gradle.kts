@@ -17,8 +17,6 @@ dependencies {
     implementation("org.javacord:javacord-core:3.1.2")
     implementation("org.javacord:javacord:3.1.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.4.2")
-
-    testImplementation("junit", "junit", "4.12")
 }
 
 configure<JavaPluginConvention> {
