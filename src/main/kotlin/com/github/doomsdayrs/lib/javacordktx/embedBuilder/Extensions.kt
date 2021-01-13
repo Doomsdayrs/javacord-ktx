@@ -15,5 +15,5 @@ import org.javacord.api.entity.message.embed.EmbedBuilder
  * @param builder Builder for the embed
  * @return Message after [await] completes
  */
-suspend fun Messageable.sendEmbed(builder: EmbedBuilder.() -> Unit): Message =
+suspend inline fun Messageable.sendEmbed(builder: EmbedBuilder.() -> Unit): Message =
 	sendMessage(embedBuilder(builder)).await()

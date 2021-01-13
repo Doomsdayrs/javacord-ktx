@@ -1,8 +1,10 @@
 package com.github.doomsdayrs.lib.javacordktx
 
 import com.github.doomsdayrs.lib.javacordktx.embedBuilder.*
+import kotlinx.coroutines.future.await
 import org.javacord.api.entity.message.Messageable
 import java.awt.Color
+import java.util.concurrent.CompletableFuture
 
 /**
  * javacord-ktx
@@ -30,6 +32,8 @@ suspend fun embedDSLTest() {
 	messageable.sendEmbed {
 		title = "Blah"
 		field { "" to "" }
+		CompletableFuture<String>().await()
+
 	}
 
 }

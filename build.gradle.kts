@@ -5,7 +5,8 @@ plugins {
 }
 
 group = "com.github.doomsdayrs.lib"
-version = "0.2.0"
+version = "0.2.2"
+description = "Kotlin extension functionality for JavaCord"
 
 repositories {
     mavenCentral()
